@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "simple-jsonp-plugin": "github:liumapp/simple-jsonp-plugin"
+    "simple-jsonp-plugin": "github:liumapp/simple-jsonp-plugin",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^2.0.0"
