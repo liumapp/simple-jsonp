@@ -1,4 +1,4 @@
-package com.liumapp.msg;
+package com.liumapp.simpleJson.msg;
 
 /**
  * Created by liumapp on 11/7/17.

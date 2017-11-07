@@ -1,4 +1,4 @@
-package com.liumapp;
+package com.liumapp.simpleJson;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,7 @@
-package com.liumapp.controller;
+package com.liumapp.simpleJson.controller;
 
-import com.liumapp.config.StatusCode;
-import com.liumapp.msg.RespInfo;
-import org.springframework.web.bind.annotation.GetMapping;
+import com.liumapp.simpleJson.config.StatusCode;
+import com.liumapp.simpleJson.msg.RespInfo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.fastjson.JSON;
@@ -18,7 +17,7 @@ import com.alibaba.fastjson.JSON;
 @RequestMapping("/")
 public class IndexController {
 
-    @GetMapping("/")
+    @RequestMapping("/")
     public String index () {
 
         RespInfo respInfo = new RespInfo();

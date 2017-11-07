@@ -1,4 +1,4 @@
-package com.liumapp.config;
+package com.liumapp.simpleJson.config;
 
 /**
  * Created by liumapp on 11/7/17.
