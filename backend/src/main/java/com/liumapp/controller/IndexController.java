@@ -1,31 +1,33 @@
 package com.liumapp.controller;
 
-import com.liumapp.entity.Guest;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
+import com.liumapp.config.StatusCode;
+import com.liumapp.msg.RespInfo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RestController;
+import com.alibaba.fastjson.JSON;
 
 /**
+ * jsonp-controller
+ * return jsonp msg
  * Created by liumapp on 9/28/17.
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
-@Controller
+@RestController
 @RequestMapping("/")
 public class IndexController {
 
-    @Autowired
-    private Guest guest;
-
     @GetMapping("/")
-    public String index (ModelMap model) {
+    public String index () {
 
-        model.addAttribute("name" , guest.getName());
-        model.addAttribute("sex" , guest.getSex());
-        return "index";
+        RespInfo respInfo = new RespInfo();
+        respInfo.setStatus(StatusCode.SUCCESS_CODE);
+        respInfo.setMessage("hello jsonp");
+        respInfo.setContent("hello world");
+
+        return "callback(" + JSON.toJSONString(respInfo) +  ")";
+
     }
 
 }

@@ -3,12 +3,7 @@ spring:
     restart:
       exclude:  public/**
       enabled:  true
-  thymeleaf:
-    suffix: .html
-    mode: HTML5
-    encoding: UTF-8
-    content-type: text/html; charset=utf-8
-    cache: false
+
 
 mybatis:
   configuration:
