@@ -22,8 +22,8 @@ public class IndexController {
 
         RespInfo respInfo = new RespInfo();
         respInfo.setStatus(StatusCode.SUCCESS_CODE);
-        respInfo.setMessage("hello jsonp");
-        respInfo.setContent("hello world");
+        respInfo.setMessage("hello jsonp, i'm lm");
+        respInfo.setContent("hello world, i'm lm");
 
         return "callback(" + JSON.toJSONString(respInfo) +  ")";
 
