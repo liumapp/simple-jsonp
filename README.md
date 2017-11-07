@@ -6,11 +6,13 @@
 
 * 后端的启动不详细说了，就是一个最基本的springboot项目
 
-* 在浏览器输入localhost:8080，能够看到返回结果说明成功
+* 在浏览器输入localhost:9080，能够看到返回结果说明成功
 
 * 其返回结果如下
 
 	![1.pic.jpg](https://github.com/liumapp/imageFolder/blob/master/vue-jsonp/1.pic.jpg)
+
+  上图的端口为8080，但后来修改为9080，您也可以自己在后端的配置文件中进行调整。
 
 ##### 启动前台
 
